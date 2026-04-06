@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distribution Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="card hero">
+      <div>
+        <p class="eyebrow">Go-to-market MVP</p>
+        <h1>Pick the best distribution channel before you ship</h1>
+        <p>Score distribution options like MCP, communities, and templates against your product type.</p>
+      </div>
+    </section>
+    <section class="grid two-up">
+      <article class="card stack">
+        <h2>Startup profile</h2>
+        <label>Product type
+          <select id="productType">
+            <option value="developer">Developer tool</option>
+            <option value="workflow">Workflow automation</option>
+            <option value="consumer">Consumer utility</option>
+          </select>
+        </label>
+        <label>Stage
+          <select id="stage">
+            <option value="idea">Idea</option>
+            <option value="mvp">MVP</option>
+            <option value="launched">Launched</option>
+          </select>
+        </label>
+        <button id="score">Score channels</button>
+      </article>
+      <article class="card stack">
+        <h2>Recommended channels</h2>
+        <div id="results"></div>
+      </article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
